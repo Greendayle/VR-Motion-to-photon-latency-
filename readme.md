@@ -22,7 +22,7 @@ depending if the right hand of the player is moving.
 Movement is calculated using position of the right hand in this and previous frame,
 if the distance between those positions is higher than a treshold - movement is detected and the testing zone changes color from green to red.
 
-Treshold is calculated by placing the controller on a stable surface, and letting it rest. 
+Treshold is calculated by placing the controller on a stable surface, and letting it rest for 4 seconds (click the Calibrate button). 
 Maximum distance traveled between 2 consecutive frames in that time period + 10% is set as a threshold.
 
 Two variants were used - plain colored and with voronoi noise overlaid - to increase scene complexity for video encoder.
