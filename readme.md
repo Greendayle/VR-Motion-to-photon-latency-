@@ -150,7 +150,11 @@ Overall errorbar is the 1/120 - slow mo video framerate + standard deviation of 
 Example flicks to demonstrate the delays and methodology:
 
 
-![results springer](./output.mp4)
+
+
+https://github.com/user-attachments/assets/bb43a5e6-a509-4fac-9d59-a4d4b40f3f62
+
+
 
 # Results
 
