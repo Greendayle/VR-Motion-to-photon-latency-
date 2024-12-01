@@ -187,6 +187,8 @@ the gun can move with almost 100 ms delay which is quite noticable. And also ove
 All the slow-motion videos are available here: `https://drive.google.com/drive/folders/1bhfLbrglGQj0n7F0kcaEFNy4eD3sFgRU?usp=sharing`
 You are welcome to recalculate the delays if you are so inclined.
 
+All the calculation are performed in https://github.com/Greendayle/VR-Motion-to-photon-latency-/raw/refs/heads/main/delays.ods which also has some Pico Connect debug screenshots.
+
 # Invitation to repeat the study
 
 I invite everyone with slow-mo capable cameras to go to my world and repeat the study and count the frames between controller movement and HMD lenses changing colors. I am interested how other
