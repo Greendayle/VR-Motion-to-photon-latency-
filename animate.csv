@@ -1,0 +1,7 @@
+HMD,frame start,frame end,filename
+Vive Pro 2,7370,7375,"""vivepro2_90Hz\VP2{:04d}.jpg"""
+Vive,4692,4697,"""vive_90Hz_noise\vive_{:04d}.jpg"""
+Pico 4 standalone,5750,5756,"""pico4_standalone\pico4s_{:04d}.jpg"""
+Pico 4 50 Mb,3999,4006,"""pico4_90hz_50mgbts\pico4_{:04d}.jpg"""
+Pico 4 50 Mb noise,3577,3585,"""pico4_90hz_50mgbts_noise\pico4_{:04d}.jpg"""
+Pico 4 130 Mb noise,7650,7660,"""pcio4_90Hz_130mgbts_noise\pico4_{:04d}.jpg"""
