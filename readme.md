@@ -180,7 +180,7 @@ As expected, Wireless VR headset have a considerably higher motion to photon lat
 at a sensible bit-rate and complex scene almost double that of the wired headsets (40 ms to 80 ms increase of latency).
 
 This can explain the trouble players experience in fast paced shooting games, where they feel less accurate using wireless headset compared to wired:
-the gun can move with almost 100 ms delay which is quite noticable. And also overall "sluggish" feel of VR headsets.
+the gun can move with almost 100 ms delay which is quite noticable. And also overall "sluggish" feel of WiFi compressed video VR headsets.
 
 # Data availability
 
