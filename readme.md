@@ -182,6 +182,11 @@ at a sensible bit-rate and complex scene almost double that of the wired headset
 This can explain the trouble players experience in fast paced shooting games, where they feel less accurate using wireless headset compared to wired:
 the gun can move with almost 100 ms delay which is quite noticable. And also overall "sluggish" feel of VR headsets.
 
+# Data availability
+
+All the slow-motion videos are available here: `https://drive.google.com/drive/folders/1bhfLbrglGQj0n7F0kcaEFNy4eD3sFgRU?usp=sharing`
+You are welcome to recalculate the delays if you are so inclined.
+
 # Invitation to repeat the study
 
 I invite everyone with slow-mo capable cameras to go to my world and repeat the study and count the frames between controller movement and HMD lenses changing colors. I am interested how other
