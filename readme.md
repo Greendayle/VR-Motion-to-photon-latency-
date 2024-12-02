@@ -154,18 +154,45 @@ Example flicks to demonstrate the delays and methodology:
 
 https://github.com/user-attachments/assets/bb43a5e6-a509-4fac-9d59-a4d4b40f3f62
 
+## Uncertainty calculation
+
+We're calculating the latency as the mean of measured delays per HMD. Uncertainty would be the standard deviation of the mean:
+
+$\sigma_m = \frac{\sigma_{total}}{\sqrt{N}}$
+
+Where N is amount of measurements.
+
+$\sigma_{total}$ is a combination of two uncertainties, uncertainty of the instrument - which is dependent on the FPS of the slow motion video, and is usually a half of the minimum interval of the measurement device:
+
+$\sigma_{instrument} = \frac{\frac{1}{{FPS}}}{2}$
+
+At 120 FPS it would be 4.2 ms.
+
+Second uncertainty is coming from the fact that flicks are coming from a random point in time - not aligned with the FPS of the camera and the fact that sometimes I can select earlier or later frame, because start of the motion is that obvious. That we calculate empirically - post factum from the standard deviation of the sample:
+
+$\sigma_{std} = STDEV_{calc function}$
+
+The standard deviations of the measurements are combined by the well known quadratic mean formula:
+
+$\sigma_{total} = \sqrt{\sigma_{instrument}^2 + \sigma_{std}^2}$
+
+Therefore we can calculate the standard deviation of the mean:
+
+$\sigma_m = \frac{\sigma_{total}}{\sqrt{N}}$
+
+Which also decreases with amount of measurements - even though our time ruler is coarse, if we repeat measurements and get very close results, we can be more and more sure about it's mean.
 
 
 # Results
 
-| HMD                                        | latency [ms] | +-  | Standard deviation of the mean | overall_erro |
-| ------------------------------------------ | ------------ | --- | ------------------------------ | ------------ |
-| Vive Pro 2 @ 90 Hz                         | 41,7         | 8,3 | 1,2                            | 9,5          |
-| OG Vive @ 90 Hz                            | 43,3         | 8,3 | 1,7                            | 10,0         |
-| Pico 4 standalone @ 90 Hz                  | 49,2         | 8,3 | 2,2                            | 10,6         |
-| Pico 4 wifi 90 Hz 50 Megabits              | 57,6         | 8,3 | 1,6                            | 9,9          |
-| Pico 4 wifi 90 Hz 50 Megabits Noisy scene  | 69,4         | 8,3 | 1,2                            | 9,5          |
-| Pico 4 wifi 90 Hz 130 Megabits Noisy scene | 80,2         | 8,3 | 1,6                            | 9,9          |
+| HMD                                        | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
+| ------------------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------- |
+| Vive Pro 2 @ 90 Hz                         | 41.7         | 1.6                                                                                                      |
+| OG Vive @ 90 Hz                            | 43.3         | 2.0                                                                                                      |
+| Pico 4 standalone @ 90 Hz                  | 49.2         | 2.1                                                                                                      |
+| Pico 4 wifi 90 Hz 50 Megabits              | 57.6         | 2.0                                                                                                      |
+| Pico 4 wifi 90 Hz 50 Megabits Noisy scene  | 69.9         | 1.6                                                                                                      |
+| Pico 4 wifi 90 Hz 130 Megabits Noisy scene | 80.2         | 1.5                                                                                                      |
 
 
 ![results springer](./delays.png)
