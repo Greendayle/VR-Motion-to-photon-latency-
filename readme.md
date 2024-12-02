@@ -247,7 +247,7 @@ Details about each test are in the [`delays_collab.ods`](https://github.com/Gree
 | Pico 4 wifi 90 Hz 130 Megabits Noisy scene                         | 80,2         | 1,5                                                                                                      |
 | Pico 4 Pro @ 90hz (ALVR 50Mbps Constant Noisy Scene Linux SteamVR) | 115,9        | 2,0                                                                                                      |
 
-![results collab(./delays_collab.png)
+![results collab](./delays_collab.png)
 
 
 
