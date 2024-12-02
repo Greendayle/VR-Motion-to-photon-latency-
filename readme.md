@@ -195,7 +195,7 @@ Which also decreases with amount of measurements - even though our time ruler is
 | Pico 4 wifi 90 Hz 130 Megabits Noisy scene | 80.2         | 1.5                                                                                                      |
 
 
-![results springer](./delays.png)
+![results springer](./delays_fixed.png)
 
 Interestingly, Vive Pro 2 at 90 Hz has a similar delay as Valve Index at 90 Hz (from the Springer study), but the OG Vive now has over 10 ms longer delay.
 Differences in nvidia drivers? SteamVR? Setting? Between current year (late 2024) VR setups and September 2022 of the Springer study?
