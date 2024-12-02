@@ -132,6 +132,7 @@ public class MtPCalc : UdonSharpBehaviour
 + Vive with Knuckles Controllers
 + Pico 4
 + Technicolor TC 7200 wifi router (yea, it's bad)
++ Windows 11, Ryzen i7 5800x3d, nvidia 3080 12 Gb
 
 
 
