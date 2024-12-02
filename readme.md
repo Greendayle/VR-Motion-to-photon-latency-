@@ -1,5 +1,7 @@
 # Measuring Motion to Photon latency in wired and wireless headsets
 
+Full results in collaboration are available on the bottom of this document
+
 # Intro
 
 The latency reported in most modern wireless headsets when using them as
@@ -225,7 +227,27 @@ wireless HMDs handle that, how better WiFi setups handle the delay, and also dif
 Good luck! You can always send me an issue or a PR.
 
 
+# Collaboration results
 
+We got some volunteers to measure their delays!
+
+Details about each test are in the [`delays_collab.ods`](https://github.com/Greendayle/VR-Motion-to-photon-latency-/raw/refs/heads/main/delays_collab.ods) file.
+
+| HMD                                                                | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
+| ------------------------------------------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------- |
+| Vive Pro 2 @ 90 Hz                                                 | 41,7         | 1,6                                                                                                      |
+| OG Vive @ 90 Hz                                                    | 43,3         | 2,0                                                                                                      |
+| Bigscreen Beyound @ 90 Hz                                          | 44,2         | 0,8                                                                                                      |
+| Bigscreen Beyound @ 75 Hz                                          | 49,0         | 1,0                                                                                                      |
+| Pico 4 standalone @ 90 Hz                                          | 49,2         | 2,1                                                                                                      |
+| Vive Pro Wireless 90 Hz                                            | 49,6         | 0,7                                                                                                      |
+| Vive Pro Wireless 90 Hz Noisy Scene                                | 53,8         | 1,1                                                                                                      |
+| Pico 4 wifi 90 Hz 50 Megabits                                      | 57,6         | 2,0                                                                                                      |
+| Pico 4 wifi 90 Hz 50 Megabits Noisy scene                          | 69,9         | 1,6                                                                                                      |
+| Pico 4 wifi 90 Hz 130 Megabits Noisy scene                         | 80,2         | 1,5                                                                                                      |
+| Pico 4 Pro @ 90hz (ALVR 50Mbps Constant Noisy Scene Linux SteamVR) | 115,9        | 2,0                                                                                                      |
+
+![results collab(./delays_collab.png)
 
 
 
