@@ -258,3 +258,7 @@ Desktop entries are in analogue to VR, but instead of flicking the controller, w
 
 
 Raw video is available here https://drive.google.com/drive/u/2/folders/1bhfLbrglGQj0n7F0kcaEFNy4eD3sFgRU
+
+## Collaborators
++ Anonymous
++ spiritmarsrover
