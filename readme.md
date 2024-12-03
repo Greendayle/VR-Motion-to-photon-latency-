@@ -233,19 +233,24 @@ We got some volunteers to measure their delays!
 
 Details about each test are in the [`delays_collab.ods`](https://github.com/Greendayle/VR-Motion-to-photon-latency-/raw/refs/heads/main/delays_collab.ods) file.
 
-| HMD                                                                | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
-| ------------------------------------------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------- |
-| Vive Pro 2 @ 90 Hz                                                 | 41,7         | 1,6                                                                                                      |
-| OG Vive @ 90 Hz                                                    | 43,3         | 2,0                                                                                                      |
-| Bigscreen Beyound @ 90 Hz                                          | 44,2         | 0,8                                                                                                      |
-| Bigscreen Beyound @ 75 Hz                                          | 49,0         | 1,0                                                                                                      |
-| Pico 4 standalone @ 90 Hz                                          | 49,2         | 2,1                                                                                                      |
-| Vive Pro Wireless 90 Hz                                            | 49,6         | 0,7                                                                                                      |
-| Vive Pro Wireless 90 Hz Noisy Scene                                | 53,8         | 1,1                                                                                                      |
-| Pico 4 wifi 90 Hz 50 Megabits                                      | 57,6         | 2,0                                                                                                      |
-| Pico 4 wifi 90 Hz 50 Megabits Noisy scene                          | 69,9         | 1,6                                                                                                      |
-| Pico 4 wifi 90 Hz 130 Megabits Noisy scene                         | 80,2         | 1,5                                                                                                      |
-| Pico 4 Pro @ 90hz (ALVR 50Mbps Constant Noisy Scene Linux SteamVR) | 115,9        | 2,0                                                                                                      |
+| HMD                                                                  | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
+| -------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
+| Desktop Logitech G305, iiyama G-Master GE2288HS 75 Hz                | 34,3         | 1,8                                                                                                      |
+| Desktop G502 Hero, VQ248QE Asus 144hz                                | 35,2         | 1,5                                                                                                      |
+| Vive Pro 2 @ 90 Hz                                                   | 41,7         | 1,6                                                                                                      |
+| OG Vive @ 90 Hz                                                      | 43,3         | 2,0                                                                                                      |
+| Bigscreen Beyound @ 90 Hz                                            | 44,2         | 0,8                                                                                                      |
+| Bigscreen Beyound @ 75 Hz                                            | 49,0         | 1,0                                                                                                      |
+| Pico 4 standalone @ 90 Hz                                            | 49,2         | 2,1                                                                                                      |
+| Vive Pro Wireless 90 Hz                                              | 49,6         | 0,7                                                                                                      |
+| Vive Pro Wireless 90 Hz Noisy Scene                                  | 53,8         | 1,1                                                                                                      |
+| Pico 4 Pico Connect wifi 90 Hz 50 Megabits                           | 57,6         | 2,0                                                                                                      |
+| Pico 4 Pico Connect wifi 90 Hz 50 Megabits Noisy scene               | 69,9         | 1,6                                                                                                      |
+| Pico 4 Pico Connect wifi 90 Hz 130 Megabits Noisy scene              | 80,2         | 1,5                                                                                                      |
+| Pico 4 Pro @ 90hz (ALVR 100 Mbps Constant Noisy Scene Linux SteamVR) | 111,6        | 2,3                                                                                                      |
+| Pico 4 Pro @ 90hz (ALVR 50 Mbps Constant Noisy Scene Linux SteamVR)  | 115,9        | 2,0                                                                                                      |
+| Pico 4 Pro @ 90hz (ALVR 200 Mbps Constant Noisy Scene Linux SteamVR) | 137,5        | 2,7                                                                                                      |
+| Pico 4 Pro @ 90hz (ALVR 400 Mbps Constant Noisy Scene Linux SteamVR) | 140,8        | 2,6                                                                                                      |
 
 ![results collab](./delays_collab.png)
 
