@@ -260,10 +260,6 @@ Desktop entries are in analogue to VR, but instead of flicking the controller, w
 | Pico 4 Pro @ 90hz (Linux ALVR 50Mbps Constant, Noisy) WiFi                | 115,9        | 2,0                                                                                                      | linux            | WiFi       |
 | Pico 4 Pro @ 90hz (Linux ALVR 200Mbps Constant, Noisy) WiFi               | 137,5        | 2,7                                                                                                      | linux            | WiFi       |
 | Pico 4 Pro @ 90hz (Linux ALVR 400Mbps Constant, Noisy) WiFi               | 140,8        | 2,6                                                                                                      | linux            | WiFi       |
-| Bigscreen Beyond @ 90hz (Linux SteamVR) DP                                | 41,7         | 1,0                                                                                                      | linux            | DP         |
-| Bigscreen Beyond @ 90hz (Linux Envision APP0 COMP-3) DP                   | 60,6         | 1,4                                                                                                      | linux            | DP         |
-| Bigscreen Beyond @ 90hz (Linux Envision) DP                               | 61,1         | 0,9                                                                                                      | linux            | DP         |
-| Bigscreen Beyond @ 90hz (Linux Envision MS_0) DP                          | 62,9         | 1,3                                                                                                      | linux            | DP         |
 
 ![results collab](./delays_collab.png)
 
