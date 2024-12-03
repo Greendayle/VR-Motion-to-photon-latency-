@@ -235,24 +235,29 @@ Details about each test are in the [`delays_collab.ods`](https://github.com/Gree
 
 Desktop entries are in analogue to VR, but instead of flicking the controller, we'd flick a mouse.
 
-| HMD                                                                  | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
-| -------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
-| Desktop Logitech G305, iiyama G-Master GE2288HS 75 Hz                | 34,3         | 1,8                                                                                                      |
-| Desktop G502 Hero, VQ248QE Asus 144hz                                | 35,2         | 1,5                                                                                                      |
-| Vive Pro 2 @ 90 Hz                                                   | 41,7         | 1,6                                                                                                      |
-| OG Vive @ 90 Hz                                                      | 43,3         | 2,0                                                                                                      |
-| Bigscreen Beyound @ 90 Hz                                            | 44,2         | 0,8                                                                                                      |
-| Bigscreen Beyound @ 75 Hz                                            | 49,0         | 1,0                                                                                                      |
-| Pico 4 standalone @ 90 Hz                                            | 49,2         | 2,1                                                                                                      |
-| Vive Pro Wireless 90 Hz                                              | 49,6         | 0,7                                                                                                      |
-| Vive Pro Wireless 90 Hz Noisy Scene                                  | 53,8         | 1,1                                                                                                      |
-| Pico 4 Pico Connect wifi 90 Hz 50 Megabits                           | 57,6         | 2,0                                                                                                      |
-| Pico 4 Pico Connect wifi 90 Hz 50 Megabits Noisy scene               | 69,9         | 1,6                                                                                                      |
-| Pico 4 Pico Connect wifi 90 Hz 130 Megabits Noisy scene              | 80,2         | 1,5                                                                                                      |
-| Pico 4 Pro @ 90hz (ALVR 100 Mbps Constant Noisy Scene Linux SteamVR) | 111,6        | 2,3                                                                                                      |
-| Pico 4 Pro @ 90hz (ALVR 50 Mbps Constant Noisy Scene Linux SteamVR)  | 115,9        | 2,0                                                                                                      |
-| Pico 4 Pro @ 90hz (ALVR 200 Mbps Constant Noisy Scene Linux SteamVR) | 137,5        | 2,7                                                                                                      |
-| Pico 4 Pro @ 90hz (ALVR 400 Mbps Constant Noisy Scene Linux SteamVR) | 140,8        | 2,6                                                                                                      |
+
+| HMD                                                                  | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements | operating system |
+| -------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- | ---------------- |
+| Linux Desktop LG 27GP950-B 144hz                                     | 19,5         | 2,0                                                                                                      | linux            |
+| Desktop Logitech G305, iiyama G-Master GE2288HS 75 Hz                | 34,3         | 1,8                                                                                                      | windows          |
+| Desktop G502 Hero, VQ248QE Asus 144hz                                | 35,2         | 1,5                                                                                                      | windows          |
+| Bigscreen Beyond @ 90hz (Linux SteamVR w/ script)                    | 40,4         | 1,2                                                                                                      | linux            |
+| Vive Pro 2 @ 90 Hz                                                   | 41,7         | 1,6                                                                                                      | windows          |
+| OG Vive @ 90 Hz                                                      | 43,3         | 2,0                                                                                                      | windows          |
+| Bigscreen Beyound @ 90 Hz                                            | 44,2         | 0,8                                                                                                      | windows          |
+| Bigscreen Beyound @ 75 Hz                                            | 49,0         | 1,0                                                                                                      | windows          |
+| Pico 4 standalone @ 90 Hz                                            | 49,2         | 2,1                                                                                                      | windows          |
+| Vive Pro Wireless 90 Hz                                              | 49,6         | 0,7                                                                                                      | windows          |
+| Vive Pro Wireless 90 Hz Noisy Scene                                  | 53,8         | 1,1                                                                                                      | windows          |
+| Pico 4 Pico Connect wifi 90 Hz 50 Megabits                           | 57,6         | 2,0                                                                                                      | windows          |
+| Bigscreen Beyond @ 90hz (Linux Envision MS_10)                       | 60,3         | 1,1                                                                                                      | linux            |
+| Pico 4 Pico Connect wifi 90 Hz 50 Megabits Noisy scene               | 69,9         | 1,6                                                                                                      | windows          |
+| Pico 4 Pico Connect wifi 90 Hz 130 Megabits Noisy scene              | 80,2         | 1,5                                                                                                      | windows          |
+| Pico 4 Pro @ 90hz (Linux ALVR 50Mbps Constant, Noiseless, w/ script) | 81,9         | 2,5                                                                                                      | linux            |
+| Pico 4 Pro @ 90hz (Linux ALVR 100Mbps Constant, Noisy)               | 111,6        | 2,3                                                                                                      | linux            |
+| Pico 4 Pro @ 90hz (Linux ALVR 50Mbps Constant, Noisy)                | 115,9        | 2,0                                                                                                      | linux            |
+| Pico 4 Pro @ 90hz (Linux ALVR 200Mbps Constant, Noisy)               | 137,5        | 2,7                                                                                                      | linux            |
+| Pico 4 Pro @ 90hz (Linux ALVR 400Mbps Constant, Noisy)               | 140,8        | 2,6                                                                                                      | linux            |
 
 ![results collab](./delays_collab.png)
 
