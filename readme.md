@@ -233,6 +233,8 @@ We got some volunteers to measure their delays!
 
 Details about each test are in the [`delays_collab.ods`](https://github.com/Greendayle/VR-Motion-to-photon-latency-/raw/refs/heads/main/delays_collab.ods) file.
 
+Desktop entries are in analogue to VR, but instead of flicking the controller, we'd flick a mouse.
+
 | HMD                                                                  | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements |
 | -------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- |
 | Desktop Logitech G305, iiyama G-Master GE2288HS 75 Hz                | 34,3         | 1,8                                                                                                      |
