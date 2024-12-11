@@ -299,12 +299,13 @@ Wired headsets:
 + Vive Wireless adds around 10 ms, resulting around 50 ms total, which kinda makes sense, as there must be a frame buffer somewhere?
 
 Wifi connected headsets:
-+ at 50 megabits which looks pretty bad you can get near the vive pro wireless delay, but still 10-20 ms slower (57-70 ms overall)
-+ at around 150 megabits which looks better you get around 80 ms delay - double that to wired headset
++ at 50 megabits, which looks pretty bad, you can get near the vive pro wireless delay, but still 10-20 ms slower (57-70 ms overall, depending on scene complexity)
++ at around 150 megabits, which looks better, you get around 80 ms delay - double that to display port connected headset
 + at 400 megabits when compression artifacts start to be less noticable you get 110 ms delay, which is quite a lot, explains why people report that they are less accurate in shooter games
 + faster wifi does not help with latency, but allows higher video bandwith at a cost of latency
-+ Pico Connect seems to be as good as Virtual Desktop at equivalent bitrates and video encoders, latency wise
-+ virtual desktop "total delay" seems to be missing 40 ms
++ Pico Connect seems to be as good as Virtual Desktop at equivalent bitrates and video encoders, latency wise. Makes sense as all our collaborators use NVIDIA video cards, Pico Connect and Virtual Desktop use the same GPU hardware encoders, and both Pico and Quest are XR2 devices with the same decoders.
++ virtual desktop "total delay" seems to be missing 40 ms compared to full motion to photon delay.
++ Using USB cable shouldn't change the total delay dramatically, but might reduce some of the transmission delay.
 
 Linux:
 + opensource Monado and ALVR linux VR stack seems to have quite more latency on wired and wifi headsets, like there are 2-3 frames delay added.
