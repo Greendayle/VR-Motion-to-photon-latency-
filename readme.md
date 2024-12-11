@@ -296,13 +296,16 @@ Raw video is available here https://drive.google.com/drive/u/2/folders/1bhfLbrgl
 Wired headsets:
 + 90 Hz baseline is 40 ms
 + are slighly slower than connected monitors showing the game window?
-+ Vive Wireless adds around 10 ms, which kinda makes sense, as there must be a frame buffer somewhere?
++ Vive Wireless adds around 10 ms, resulting around 50 ms total, which kinda makes sense, as there must be a frame buffer somewhere?
 
 Wifi connected headsets:
-+ at 50 megabits which looks pretty bad you can get near the vive pro wireless delay, but still slower 
++ at 50 megabits which looks pretty bad you can get near the vive pro wireless delay, but still 10-20 ms slower (57-70 ms overall)
 + at around 150 megabits which looks better you get around 80 ms delay - double that to wired headset
 + at 400 megabits when compression artifacts start to be less noticable you get 110 ms delay, which is quite a lot, explains why people report that they are less accurate in shooter games
 + faster wifi does not help with latency, but allows higher video bandwith at a cost of latency
 + Pico Connect seems to be as good as Virtual Desktop at equivalent bitrates and video encoders, latency wise
 + virtual desktop "total delay" seems to be missing 40 ms
+
+Linux:
++ opensource Monado and ALVR linux VR stack seems to have quite more latency on wired and wifi headsets, like there are 2-3 frames delay added.
 
