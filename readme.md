@@ -320,3 +320,6 @@ Wifi connected headsets:
 Linux:
 + opensource Monado and ALVR linux VR stack seems to have quite more latency on wired and wifi headsets, like there are 2-3 frames delay added.
 
+Overall:
++ steam vr/vrchat might be adding 1-2 frames frame buffer. Low level direct OpenXR apps can reduce latency!
+
