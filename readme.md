@@ -322,5 +322,4 @@ Linux:
 
 Overall:
 + steam vr/vrchat might be adding 1-2 frames frame buffer. Low level direct OpenXR apps can reduce latency!
-+ usb, even 2.0, does reduce delay on high bitrates compared to a shitty router?
 
