@@ -237,17 +237,23 @@ VR controller motion to photon latency.
 Desktop entries are in analogue to VR, but instead of flicking the controller, we'd flick a mouse.
 Almost all entries are made in VRChat world. A few entries have their own proprietary low level OpenXR app.
 
+After discussion with original authours of `https://link.springer.com/content/pdf/10.3758/s13428-022-01983-5.pdf` we realized, that our map can be sampling slightly too old controller pose, and that could explain 1 frame difference in results between OG Vive and Index in the `https://link.springer.com/content/pdf/10.3758/s13428-022-01983-5.pdf` and ours study. Additionally a custom made low level minimal OpenXR application was provided which tries to do the same test, but makes sure there is no buffering of extra frames or anything like that. That app did reduce the delay, especially in connection with Oculus Link USB connection - using Oculus OpenXR runtime directly, which seems to reduce Quest 2 delay to quite small value of 32 ms, even at 500 megabits (over USB). Which is quite impressive. Althoug the low level application and oculus runtime is now seldom used in VR world, it sets a baseline to which all VR game and runtime/drivers developers should strive for.
+
 | label                                                                                                                                                       | latency [ms] | Standard deviation of the mean including Instrumental uncertainty and Standard deviation of measurements | operating system | connection |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------- | ---------------- | ---------- |
-| Linux Desktop LG 27GP950-B 144hz DP                                                                                                                         | 19,5         | 2,0                                                                                                      | linux            | DP         |
+| Desktop Linux LG 27GP950-B 144hz DP                                                                                                                         | 19,5         | 2,0                                                                                                      | linux            | DP         |
+| Vive Pro 2 @ 120 Hz CUSTOM SELF MADE LOW LEVEL ENGINELESS PROPRIETARY OPENXR APPLICATION DP                                                                 | 26,2         | 2,0                                                                                                      | windows          | DP         |
+| Vive Pro 2 @ 120 Hz postlateupdate DP                                                                                                                       | 32,1         | 1,8                                                                                                      | windows          | DP         |
 | Quest 2 @ 120 Hz Quest controllers, oculus OpenXR runtime, USB,CUSTOM SELF MADE LOW LEVEL ENGINELESS PROPRIETARY OPENXR APPLICATION , 500 Mb 2000x2000 USB3 | 32,1         | 1,4                                                                                                      | windows          | USB3       |
 | Desktop Logitech G305, iiyama G-Master GE2288HS 75 Hz DP                                                                                                    | 34,3         | 1,8                                                                                                      | windows          | DP         |
 | Desktop G502 Hero, VQ248QE Asus 144hz DP                                                                                                                    | 35,2         | 1,5                                                                                                      | windows          | DP         |
 | Index @ 144 Hz (Linux SteamVR) DP                                                                                                                           | 35,3         | 1,3                                                                                                      | linux            | DP         |
 | Vive Pro 2 @ 120 Hz DP                                                                                                                                      | 36,3         | 1,9                                                                                                      | windows          | DP         |
+| Vive Pro 2 @ 90 Hz postlateupdate DP                                                                                                                        | 37,5         | 2,0                                                                                                      | windows          | DP         |
 | PSVR 2 @ 120 Hz Index controllers DP                                                                                                                        | 40,1         | 2,6                                                                                                      | windows          | DP         |
 | Bigscreen Beyond @ 90hz (Linux SteamVR w/ script) DP                                                                                                        | 40,4         | 1,2                                                                                                      | linux            | DP         |
 | Vive Pro 2 @ 90 Hz DP                                                                                                                                       | 41,7         | 1,6                                                                                                      | windows          | DP         |
+| Vive Pro 2 @ 90 Hz CUSTOM SELF MADE LOW LEVEL ENGINELESS PROPRIETARY OPENXR APPLICATION DP                                                                  | 41,7         | 2,4                                                                                                      | windows          | DP         |
 | Bigscreen Beyond @ 90hz (Linux SteamVR) DP                                                                                                                  | 41,7         | 1,0                                                                                                      | linux            | DP         |
 | Quest 2 @ 120 Hz Virtual Desktop, SteamVR, h264, 150mbps, ultra. VD latency 30ms. CUSTOM SELF MADE LOW LEVEL ENGINELESS PROPRIETARY OPENXR APPLICATION WiFi | 42,7         | 2,4                                                                                                      | windows          | WiFi       |
 | OG Vive @ 90 Hz DP                                                                                                                                          | 43,3         | 2,0                                                                                                      | windows          | DP         |
@@ -287,11 +293,11 @@ Almost all entries are made in VRChat world. A few entries have their own propri
 | Pico 4 Pro @ 90hz (Linux ALVR 400Mbps Constant, Noisy) WiFi                                                                                                 | 140,8        | 2,6                                                                                                      | linux            | WiFi       |
 
 
-![results collab](./delays_collab.png)
+![results collab](./delays_collab.jpg)
 
 Differently sorted:
 
-![results collab](./delays_collab_sorted_by_hmd_os.png)
+![results collab](./delays_collab_sorted_by_hmd_os.jpg)
 
 Raw video is available here https://drive.google.com/drive/u/2/folders/1bhfLbrglGQj0n7F0kcaEFNy4eD3sFgRU
 
@@ -322,4 +328,6 @@ Linux:
 
 Overall:
 + steam vr/vrchat might be adding 1-2 frames frame buffer. Low level direct OpenXR apps can reduce latency!
++ Carmack is god and helped to create an amazing VR runtime which can slash 10-20 ms off the baseline.
++ Current VR games and SteamVR runtime seems to have additional frame buffers causing unnecesary delay. Unperceptable on cable, but on high bitrate, high resolution WiFi connection if starts to give.
 
