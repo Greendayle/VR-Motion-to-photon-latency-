@@ -355,7 +355,7 @@ Additionally a custom made low level minimal OpenXR application was provided whi
 
 Differently sorted:
 
-![results collab](./delays_collab_sorted_by_hmd_os.jpg)
+![results collab](./delays_collab_sorted_by_hmd.jpg)
 
 Raw video is available here https://drive.google.com/drive/u/2/folders/1bhfLbrglGQj0n7F0kcaEFNy4eD3sFgRU
 
